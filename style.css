@@ -1,0 +1,126 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+hr{
+    border-style: dashed;
+}
+
+#new{
+    text-align: center;
+    background-color:lightskyblue;
+    width: 200px;
+    font-size: 20px;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+
+/* New Book Form */
+
+/* Window that covers whole screen - stop click propagation*/
+#formWrapper{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Form Centered within popup */
+#popup{
+    top: 15%;
+    right: 25%;
+    position: fixed;
+    background-color: lightgoldenrodyellow;
+    width: 50%;
+    margin: auto;
+    border-radius: 15px;
+    text-align: center;
+    padding: 1%;
+}
+
+/* Change these to the scope of the form */
+
+#popup label, input{
+    width: 80%;
+}
+
+#popup h2{
+    margin-top: 0;
+}
+
+#popup ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#isRead{
+    display: inline;
+    width: auto;
+}
+
+#read{
+    display: inline-block;
+}
+
+#error{
+    color: red;
+    text-align: center;
+}
+
+.active{
+    display: block;
+}
+
+.inactive{
+    display: none;
+}
+
+/* Book Card*/
+.card{
+    background-color: lightblue;
+    border-radius: 15px;
+    width: 30%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.remove{
+    font-family: Verdana, sans-serif;
+    text-align: right;
+    margin: 0;
+}
+
+/** Read/Unread buttons */
+
+.readButton{
+    width: 30%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.read{
+    background-color: lightgreen;
+    text-align: center;
+}
+.read:hover{
+    background-color:#9ef59e
+}
+
+.unread{
+    background-color: lightcoral;
+    text-align: center;
+}
+.unread:hover{
+    background-color:#f19999;
+}

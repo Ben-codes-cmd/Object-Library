@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="script.js" defer=true></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Library</h1>
+    <hr>
+    <div id="new">New Book</div>
+    <!-- Create a form to create a new book -->
+    <div id="formWrapper" class="inactive">
+        <form name="newBook" id="popup">
+            <p id="exitForm" class="remove">X</p>
+            <ul>
+                <li>
+                    <h2>Add a New Book</h2>
+                </li>
+                <li>
+                    <p>Title</p>
+                    <input type="text" id="title" name="Book_Title">
+                </li>
+                <li>
+                    <p>Author</p>
+                    <input type="text" id="author" name="Book_Author">
+                </li>
+                <li>
+                    <p># of Pages</p>
+                    <input type="number" id="pages" name="Number_Of_Pages">
+                </li>
+                <li>
+                    <p id="read">Have you read this book?</p>
+                    <input type="checkbox" id="isRead" name="Read_Status">
+                </li>
+            </ul>
+            <p id="error"></p>
+            <button id="create" type="button">Create</button>
+        </form>
+    </div>
+</body>
+</html>
